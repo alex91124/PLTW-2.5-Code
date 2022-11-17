@@ -23,7 +23,13 @@ public class Player
     points = 0;
     System.out.println("Welcome to the game " + name);
   }
+  
   /* your code here - accessor(s) */ 
-
+  public double getPoints() {
+    return points;
+  }
+  public String getName() {
+    return name;
+  }
   /* your code here - mutator(s) */ 
 }

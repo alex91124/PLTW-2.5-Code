@@ -16,9 +16,10 @@ public class PhraseSolver
     Board board = new Board();
     Player p1 = new Player();
     Player p2 = new Player();
+    
   }
   /* your code here - accessor(s) */
-  
+
   /* your code here - mutator(s)  */
 
   public void play()
@@ -33,7 +34,6 @@ public class PhraseSolver
     {
       
       /* your code here - game logic */
-      
       
       /* your code here - determine how game ends */
       solved = true; 

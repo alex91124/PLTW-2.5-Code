@@ -40,7 +40,9 @@ public class  Board
     }
     return false;
   }
-
+  public String getSolvedPhrase() {
+    return solvedPhrase;
+  }
   private String loadPhrase()
   {
     String tempPhrase = "";
