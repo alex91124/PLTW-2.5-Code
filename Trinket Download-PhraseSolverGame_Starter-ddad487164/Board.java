@@ -90,11 +90,13 @@ public class  Board
 
   public boolean guessLetter(String guess)
   {
+    //checking if the letter is in the phrase
     boolean foundLetter = false;
     String newSolvedPhrase = "";
-    
+    //Loops through all character in a string
     for (int i = 0; i < phrase.length(); i++)
     {
+      //compares each letter to guess
       if (phrase.substring(i, i + 1).equals(guess))
       {
         newSolvedPhrase += guess + " ";
@@ -102,10 +104,12 @@ public class  Board
       }
       else
       {
+        // update the new phrase to showcase the guess
         newSolvedPhrase += solvedPhrase.substring(i * 2, i * 2 + 1) + " ";  
       }
     }
     solvedPhrase = newSolvedPhrase;
+    //return the letter
     return foundLetter;
   } 
 } 
