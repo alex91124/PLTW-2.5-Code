@@ -15,8 +15,7 @@ public class Player
     points = 0;
     Scanner myObj = new Scanner(System.in);  // Create a Scanner object
     System.out.println("Hi, welcome to the game. What is your name?");
-    String userName = myObj.nextLine();
-    System.out.println("Welcome " + userName);
+    name = myObj.nextLine();
   }
   public Player(String inputName){
     name = inputName;
@@ -32,4 +31,7 @@ public class Player
     return name;
   }
   /* your code here - mutator(s) */ 
+  public void updatePoints(int incrementer) {
+    points += incrementer;
+  }
 }

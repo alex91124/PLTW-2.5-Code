@@ -8,14 +8,15 @@ import java.io.File;
 
 public class  Board
 {
-  private String solvedPhrase;
-  private String phrase;
+  public String solvedPhrase;
+  public String phrase;
   private int currentLetterValue; 
 
   /* your code here - constructor(s) */ 
   public Board(){
     solvedPhrase = "";
-    phrase = "";
+    phrase = loadPhrase();
+    //phrase = "hello";
     setLetterValue();;
     loadPhrase();
     System.out.println("Phrase: " + phrase); //temp test code
